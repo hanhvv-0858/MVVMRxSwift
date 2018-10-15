@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3998053E21747979006915D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998053D21747979006915D2 /* AppDelegate.swift */; };
-		3998054021747979006915D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998053F21747979006915D2 /* ViewController.swift */; };
-		3998054321747979006915D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3998054121747979006915D2 /* Main.storyboard */; };
 		399805452174797B006915D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399805442174797B006915D2 /* Assets.xcassets */; };
 		399805482174797B006915D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399805462174797B006915D2 /* LaunchScreen.storyboard */; };
 		399805532174797C006915D2 /* MVVMRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399805522174797C006915D2 /* MVVMRxSwiftTests.swift */; };
+		3998056021748386006915D2 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998055F21748386006915D2 /* UIViewController+.swift */; };
+		39980567217494C1006915D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39980566217494C1006915D2 /* User.swift */; };
+		3998056921749618006915D2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998056821749618006915D2 /* LoginViewModel.swift */; };
+		3998056D217496C6006915D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998056C217496C6006915D2 /* LoginViewController.swift */; };
+		3998057121749715006915D2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3998057021749715006915D2 /* Login.storyboard */; };
+		3998057321749729006915D2 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998057221749729006915D2 /* Storyboards.swift */; };
 		8D4468CD1AE622A0C234B5EC /* Pods_MVVMRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0890660C3E9F08E6C1ACC5FE /* Pods_MVVMRxSwift.framework */; };
 		B7D00902843A29F3E5BD65C1 /* Pods_MVVMRxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6825615B69FB712EE9616AAA /* Pods_MVVMRxSwiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -32,14 +36,19 @@
 		0890660C3E9F08E6C1ACC5FE /* Pods_MVVMRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3998053A21747979006915D2 /* MVVMRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3998053D21747979006915D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3998053F21747979006915D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3998054221747979006915D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		399805442174797B006915D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		399805472174797B006915D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		399805492174797B006915D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3998054E2174797C006915D2 /* MVVMRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		399805522174797C006915D2 /* MVVMRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMRxSwiftTests.swift; sourceTree = "<group>"; };
 		399805542174797C006915D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3998055F21748386006915D2 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		39980566217494C1006915D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3998056821749618006915D2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3998056C217496C6006915D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3998057021749715006915D2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		3998057221749729006915D2 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		39980574217497C2006915D2 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		4033113BD6A56A0450108B19 /* Pods-MVVMRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwift.release.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwift/Pods-MVVMRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		6825615B69FB712EE9616AAA /* Pods_MVVMRxSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B119D9970BB9AFB473439196 /* Pods-MVVMRxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTests/Pods-MVVMRxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,9 +109,10 @@
 		3998053C21747979006915D2 /* MVVMRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				3998055E21748370006915D2 /* Extensions */,
+				39980561217483E9006915D2 /* Core */,
 				3998053D21747979006915D2 /* AppDelegate.swift */,
-				3998053F21747979006915D2 /* ViewController.swift */,
-				3998054121747979006915D2 /* Main.storyboard */,
+				39980574217497C2006915D2 /* Bridging-Header.h */,
 				399805442174797B006915D2 /* Assets.xcassets */,
 				399805462174797B006915D2 /* LaunchScreen.storyboard */,
 				399805492174797B006915D2 /* Info.plist */,
@@ -117,6 +127,82 @@
 				399805542174797C006915D2 /* Info.plist */,
 			);
 			path = MVVMRxSwiftTests;
+			sourceTree = "<group>";
+		};
+		3998055E21748370006915D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3998055F21748386006915D2 /* UIViewController+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		39980561217483E9006915D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				399805622174935F006915D2 /* Models */,
+				399805632174938F006915D2 /* ViewModels */,
+				3998056421749398006915D2 /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		399805622174935F006915D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39980566217494C1006915D2 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		399805632174938F006915D2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3998056A21749635006915D2 /* Login */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3998056421749398006915D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3998056F217496ED006915D2 /* ViewControllers */,
+				3998056E217496DC006915D2 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3998056A21749635006915D2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3998056821749618006915D2 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3998056B21749646006915D2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3998056C217496C6006915D2 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3998056E217496DC006915D2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3998057221749729006915D2 /* Storyboards.swift */,
+				3998057021749715006915D2 /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3998056F217496ED006915D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3998056B21749646006915D2 /* Login */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		AB4840D1975A2A085462736B /* Frameworks */ = {
@@ -214,9 +300,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3998057121749715006915D2 /* Login.storyboard in Resources */,
 				399805482174797B006915D2 /* LaunchScreen.storyboard in Resources */,
 				399805452174797B006915D2 /* Assets.xcassets in Resources */,
-				3998054321747979006915D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +454,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3998054021747979006915D2 /* ViewController.swift in Sources */,
+				3998056D217496C6006915D2 /* LoginViewController.swift in Sources */,
+				39980567217494C1006915D2 /* User.swift in Sources */,
 				3998053E21747979006915D2 /* AppDelegate.swift in Sources */,
+				3998056921749618006915D2 /* LoginViewModel.swift in Sources */,
+				3998056021748386006915D2 /* UIViewController+.swift in Sources */,
+				3998057321749729006915D2 /* Storyboards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,14 +482,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3998054121747979006915D2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3998054221747979006915D2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		399805462174797B006915D2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -541,6 +623,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.framgia.MVVMRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MVVMRxSwift/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -560,6 +643,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.framgia.MVVMRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MVVMRxSwift/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
