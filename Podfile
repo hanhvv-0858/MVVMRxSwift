@@ -3,7 +3,6 @@ platform :ios, '10.0'
 
 def pods
     # Core
-    pod 'ObjectMapper', '~> 3.3'
     pod 'Reusable', '~> 4.0'
     pod 'Then', '~> 2.3'
     pod 'MJRefresh', '~> 3.1'

@@ -7,19 +7,7 @@
 //
 
 import Foundation
-import ObjectMapper
 
-class User: Mappable {
-    required convenience init?(map: Map) {
-        self.init()
-    }
-    
-    func mapping(map: Map) {
-        
-    }
-    
-    init() {
-        
-    }
+class User: NSObject {
 
 }
