@@ -15,18 +15,55 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        basicEncoding()
+        basicDecoding()
+        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func basicEncoding() {
+        //Basic Encoding and Decoding
+        let userObj = User()
+        userObj.name = "Hanh Vu"
+        let url = URL.init(string: "/assets/missing.png")
+        userObj.avatar = Avatar(origin: url, cellphone: nil)
+        
+        //Encode to Json format
+        let jsonEncoder = JSONEncoder()
+        do {
+            let jsonData = try jsonEncoder.encode(userObj)
+            if let encodedObjectJsonString = String(data: jsonData, encoding: .utf8) {
+                print(encodedObjectJsonString)
+            }
+        } catch {
+            
+        }
     }
-    */
-
+    
+    func basicDecoding() {
+        let jsonString = """
+                        {
+                            "id": 1024,
+                              "name": "Ngeng Chhengkim",
+                              "username": "ngengchhengkim",
+                              "email": "chhengkimngeng@gmail.com",
+                              "avatar": {
+                                "origin": "/assets/missing.png",
+                                "cellphone": "/assets/missing.png"
+                              },
+                              "private_account": true
+                        }
+                        """
+        if let jsonData = jsonString.data(using: .utf8) {
+            //And here you get the Car object back
+            do {
+                let jsonDecoder = JSONDecoder()
+                let userObject = try jsonDecoder.decode(User.self, from: jsonData)
+                print(userObject.name)
+            } catch {
+                
+            }
+        }
+    }
 }
 
 // MARK: - StoryboardSceneBased
