@@ -10,4 +10,5 @@ import UIKit
 
 struct Storyboards {
     static let login = UIStoryboard(name: "Login", bundle: nil)
+    static let cat = UIStoryboard(name: "Cat", bundle: nil)
 }

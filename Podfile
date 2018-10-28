@@ -15,7 +15,7 @@ def pods
     pod 'NSObject+Rx', '~> 4.3'
     pod 'RxDataSources', '~> 3.0'
     pod 'RxAlamofire', '~> 4.2'
-    
+    pod 'RxRealm', '~> 0.7.5'
     #
     pod 'SwiftLint', '~> 0.27'
     

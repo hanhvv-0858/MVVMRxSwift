@@ -16,8 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let loginVC = LoginViewController.instantiate()
-        window?.rootViewController = loginVC
+        AppRealmManager.config()
+        let catVC = ListCatViewController.instantiate()
+        let navi = UINavigationController.init(rootViewController: catVC)
+        window?.rootViewController = navi
         return true
     }
 
